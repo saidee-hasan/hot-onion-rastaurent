@@ -1,0 +1,108 @@
+.header {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.logo img {
+  width: 160px;
+}
+
+.bar {
+  margin: 10px;
+}
+.logo {
+  position: relative;
+  margin-left: 150px;
+}
+.app-bar {
+  position: absolute;
+  bottom: px;
+  left: 65%;
+}
+.sign-btn {
+  background-color: red;
+  width: 130px;
+  height: 40px;
+  padding: 3px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px gray;
+  border: 1px solid white;
+}
+.sign-btn a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.bg-image img {
+  width: 100%;
+}
+
+.bar a {
+  text-decoration: none;
+  font-size: 23px;
+  margin-right: 20px;
+}
+.search {
+  color: white;
+  position: absolute;
+  bottom: 70%;
+  margin-left: 40%;
+}
+.search input {
+  height: 35px;
+  border-radius: 60px;
+  border: none;
+
+}
+.search button {
+  position: absolute;
+  height: 40px;
+  border: none;
+  width: 80px;
+  border-radius: 60px;
+  background-color: red;
+
+}
+
+/* movile screen */
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+  }
+
+  .logo img {
+    width: 140px;
+  }
+
+  .bar {
+    margin: 10px;
+  }
+  .logo {
+    position: relative;
+    margin-left: 10px;
+  }
+  .app-bar {
+    position: absolute;
+    bottom: px;
+    left: 50%;
+  }
+  .bar a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  .search {
+    color: white;
+    position: absolute;
+    bottom: 77%;
+    margin-left: 35%;
+  }
+}
