@@ -25,6 +25,11 @@
   bottom: px;
   left: 65%;
 }
+.bar a {
+  text-decoration: none;
+  font-size: 23px;
+  margin-right: 20px;
+}
 .sign-btn {
   background-color: red;
   width: 130px;
@@ -38,36 +43,7 @@
   text-decoration: none;
   color: aliceblue;
 }
-.bg-image img {
-  width: 100%;
-}
 
-.bar a {
-  text-decoration: none;
-  font-size: 23px;
-  margin-right: 20px;
-}
-.search {
-  color: white;
-  position: absolute;
-  bottom: 70%;
-  margin-left: 40%;
-}
-.search input {
-  height: 35px;
-  border-radius: 60px;
-  border: none;
-
-}
-.search button {
-  position: absolute;
-  height: 40px;
-  border: none;
-  width: 80px;
-  border-radius: 60px;
-  background-color: red;
-
-}
 
 /* movile screen */
 @media only screen and (max-width: 600px) {
