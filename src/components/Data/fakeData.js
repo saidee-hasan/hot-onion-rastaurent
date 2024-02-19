@@ -94,7 +94,7 @@ export const fakedata =[
         id: 16,
        name: "Breakfast",
        title:"breakfast is haven by to roo",
-        images: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkRDvCfxP2qGvrirVu4m1y0-wrxDvVlzi6aA&usqp=CAU",
+    images: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkRDvCfxP2qGvrirVu4m1y0-wrxDvVlzi6aA&usqp=CAU",
         doller: "144"
     }, {
         id: 17,

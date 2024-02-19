@@ -25,6 +25,33 @@
     background-color: red;
   
   }
+.pd-btn{
+  text-align: center;
+
+}
+.pd-btn button{
+  width: 101px;
+  height: 30px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(255, 0, 0);
+  color: aliceblue;
+
+}
+
+.pd-btn button:hover{
+  width: 101px;
+  height: 30px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(49, 138, 31);
+  color: aliceblue;
+
+}
+
+
 
   /* movile screen */
   @media only screen and (max-width: 600px) {
