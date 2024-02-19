@@ -5,7 +5,7 @@ import { CategoryContaxt } from "../../App";
 
 const Home = (props) => {
   const [productCount, setProductCount] = useContext(CategoryContaxt);
-  console.log(props)
+
 
   return (
     <div>
@@ -21,7 +21,7 @@ const Home = (props) => {
      
       <p>this is Header {productCount}</p>
       <button onClick={()=>setProductCount('Breakfast')}>Breakfast</button>
-      <button onClick={()=>setProductCount('lunch')}>Lunch</button>
+      <button onClick={()=>setProductCount('Lunch')}>Lunch</button>
       <button onClick={()=> setProductCount('Dinner')}>Deanier</button>
     </div>
   );

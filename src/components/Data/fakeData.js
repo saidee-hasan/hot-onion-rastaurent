@@ -105,7 +105,7 @@ export const fakedata =[
     }, {
         id: 18,
        name: "Breakfast",
-       title:"breakfast is haven by to roo",
+       title:"breakfast is haven by to oo",
         images: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrKl02sus1DacmX-cHywWiUKGjYtJPXs1lWw&usqp=CAU",
         doller: "246"
     },

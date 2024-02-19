@@ -5,13 +5,13 @@ import { createContext, useState } from "react";
 export const CategoryContaxt = createContext();
 
 function App() {
-  const [productCount, setProductCount] = useState("")
+  const [productCount, setProductCount] = useState("Dinner")
   return (
     <div className="App">
       <CategoryContaxt.Provider value={[productCount, setProductCount]}>
         <p> count product  : {productCount}</p>
         <RouterProvider router={router}>
-          <MinLayout></MinLayout>
+          <MinLayout setProductCount={setProductCount}></MinLayout>
         </RouterProvider>
       </CategoryContaxt.Provider>
     </div>

@@ -1,10 +1,11 @@
 import React from 'react';
 
 const Product = (props) => {
-console.log(props.product.title)
+const {title} = props.product;
+console.log(props)
   return (
     <div>
-   <h1>hi {props.product.title} </h1>
+   <h1>This is title {title}</h1>
   
     </div>
   );
