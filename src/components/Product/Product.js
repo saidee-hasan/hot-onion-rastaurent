@@ -6,10 +6,14 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Product = (props) => {
-  const { title, doller, images } = props.product;
-  console.log(props);
+  const { title, doller, images,key } = props.product;
+  // console.log(props);
 
   return (
     <Card className="product" sx={{ maxWidth: 450 }}>
@@ -21,17 +25,23 @@ const Product = (props) => {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Food
         </Typography>
         <Typography variant="body2" color="text.secondary">
-         {
+        <Link to={'/product/'+ key}> {
           title
-         }
+         }</Link>
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions className="pd-btn">
         <Button size="small">$ {doller}</Button>
-        <Button size="small">Learn More</Button>
+     { props.showaddToCart  && <button 
+         onClick={()=>props.handleAddProduct(props.product)
+         }>  
+        <FontAwesomeIcon icon={faShoppingCart} />
+        add to cart 
+        
+        </button>}
       </CardActions>
     </Card>
   );

@@ -23,10 +23,12 @@
     width: 80px;
     border-radius: 60px;
     background-color: red;
+    cursor: pointer;
   
   }
 .pd-btn{
   text-align: center;
+  
 
 }
 .pd-btn button{
@@ -37,6 +39,7 @@
   border: none;
   background-color: rgb(255, 0, 0);
   color: aliceblue;
+ 
 
 }
 

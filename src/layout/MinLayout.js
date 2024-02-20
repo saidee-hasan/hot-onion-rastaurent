@@ -6,12 +6,11 @@ import { CategoryContaxt } from '../App';
 import Shop from '../components/Shop/Shop';
 
 const MinLayout = () => {
-    const [productCount, setProductCount] =useContext(CategoryContaxt)
+ 
     return (
         <div>
             <Header></Header>
-            <Home setProductCount={setProductCount}></Home>
-            <Shop></Shop>
+           
             <Outlet></Outlet>
             
         </div>

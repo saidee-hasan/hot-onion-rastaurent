@@ -8,7 +8,7 @@ const Home = (props) => {
   const [productCount, setProductCount] = useContext(CategoryContaxt);
 
   return (
-    <div>
+    <div >
       <div className="bg-image">
         <img src={Bg_img} alt="" />
       </div>

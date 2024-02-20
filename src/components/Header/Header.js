@@ -1,10 +1,12 @@
-import React from "react";
 import "./Header.css";
 import Logo from "../../images/homepage/logo2.png";
+import * as React from "react";
+
 
 import { Link } from "react-router-dom";
 
 const Header = () => {
+ 
   return (
     <div className="header">
       <section class="container">
@@ -14,13 +16,12 @@ const Header = () => {
 
         <div class="bar app-bar">
           <Link to="/login">Login</Link>
+          
           <button className="sign-btn">
             <Link to="/sign-up">Sign up</Link>
           </button>
         </div>
       </section>
-     
-    
     </div>
   );
 };

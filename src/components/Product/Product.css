@@ -10,4 +10,24 @@
 
 
 }
-
+.pd-btn{
+  
+   border: none;
+}
+ /* movile screen */
+ @media only screen and (max-width: 600px) {
+   .product {
+      float: left;
+       border-bottom: 1px solid lightgray;
+       margin-bottom: 20px;
+        margin-left: 100px;
+        width: 200px;
+        height: 320px;
+      
+      
+     
+     
+     }
+  
+ }
+ 
