@@ -6,6 +6,7 @@ import Home from "../components/Home/Home";
 import Shop from "../components/Shop/Shop";
 import ProductDatil from "../components/ProductDatil/ProductDatil";
 import Review from "../components/Review/Review";
+import Shipment from "../components/Shipment/Shipment";
 
 
 export const router = createBrowserRouter([
@@ -17,7 +18,8 @@ export const router = createBrowserRouter([
         {path:'/sign-up',element:<SigneIn/>},
         { path:'/',element:<Shop/>},
         {path:'/product/:productKey', element:<ProductDatil/>},
-        {path:'/review',element:<Review/>}
+        {path:'/review',element:<Review/>},
+        {path:'/shipment',element:<Shipment/>}
       
 
         

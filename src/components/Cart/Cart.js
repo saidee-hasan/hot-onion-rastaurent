@@ -16,7 +16,7 @@ const Cart = (props) => {
         },
       }));
       const cart =props.cart;
-      const totalPrice =cart.reduce((total,prd)=> total+ prd.doller,0)
+      const totalPrice =cart.reduce((total,prd)=> total+ prd.doller * prd.quantity,0)
     return (
         <div>
             <IconButton aria-label="cart">

@@ -6,7 +6,9 @@ import Home from "../Home/Home";
 import "./Shop.css";
 import Cart from "../Cart/Cart";
 import Header from "../Header/Header";
-import { addToDb } from "../../utilities/fakedb";
+import { addToDb, getShoppingCart } from "../../utilities/fakedb";
+import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 
 const Shop = () => {
   const [name] = useContext(CategoryContaxt);
@@ -18,13 +20,41 @@ const Shop = () => {
     );
     setProduct(matchProducts);
   }, [name]);
+
+  useEffect(()=>{
+    //cart
+    const saveCart = getShoppingCart();
+    const productKeys = Object.keys(saveCart);
+   const cartProducts = productKeys.map(key=> {
+      const product = fakedata.find(pd=>pd.key === key);
+      product.quantity =saveCart[key];
+      return product;
+   })
+   setCart(cartProducts);
+  
+      },[])
+  
+  
   
   const handleAddProduct= (product)=>{
+    const toBeAddedKey = product.key;
     // console.log('product added',product);
-    const newCart = [...cart,product];
+    const sameProduct = cart.find(pd=> pd.key === toBeAddedKey) ;
+    let count = 1;
+    let newCart;
+    if(sameProduct){
+      const count = sameProduct.quantity + 1;
+      sameProduct.quantity = count;
+      const others =cart.filter(pd => pd.key !== toBeAddedKey);
+      newCart =[...others,sameProduct]
+    }
+    else{
+      product.quantity =1;
+      newCart = [...cart,product];
+    }
+
     setCart(newCart);
-    const someProduct =newCart.filter(pd=> pd.key === product.key) ;
-    const count= someProduct.length;
+    
     addToDb(product.key,count)
   }
 
@@ -43,9 +73,10 @@ const Shop = () => {
            ></Product>
         ))}
       </div>
+      
       <div className="">
       <Cart cart={cart}></Cart>
-
+      <Link to={'/review'}> <Button variant="contained" disableElevation > Order Now</Button> </Link>
       </div>
     </div>
   );

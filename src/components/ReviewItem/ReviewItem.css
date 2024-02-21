@@ -1,0 +1,14 @@
+.reviewItem{
+    border-bottom: 1px solid grey;
+    padding-bottom: 50px;
+    margin-left: 200px;
+    text-align: justify;
+    width:50%;
+   
+}
+.reviewItem img{
+    width: 200px;
+    height: 150px;
+    float: left;
+
+}
